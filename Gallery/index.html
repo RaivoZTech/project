@@ -1,0 +1,61 @@
+<!--This is my webpages Gallery section which includes the same navigation menu as in the main Home page and it contains 12 images -->
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>Dana's Handmade/Gallery</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="..\style.css"><!--External CSS style file-->
+</head>
+<body>
+<nav class="navbar"><!--Navigation element-->
+
+    <!--Logo witch anchors to back to main home page-->
+    <div class="logo">
+        <a href="..\index.html"><!--path to main page-->
+            <img src="../Images/Danas_Handmade.png"/>
+            <!--(Logo Design - Create Your Own Logo, It's Free! - Free Logo Design, 2022) Available at https://www.freelogodesign.org-->
+        </a>
+    </div>
+    <ul class="nav-items" id="navi-list">
+        <li class="item1">
+            <a href="..\index.html">Home</a><!--Anchor tag brings to Home page-->
+        </li>
+        <li class="item2">
+            <a href="index.html">Gallery</a><!--Anchor tag brings to Gallery page-->
+        </li>
+        <li class="item3">
+            <a href="..\About\index.html">About</a><!--Anchor tag brings to About page-->
+        </li>
+        <li class="item4">
+            <a href="..\Contact Us\index.html">Contact Us</a><!--Anchor tag brings to Contact us page-->
+        </li>
+    </ul>
+    <div class="menu" id="toggleButton"><!--div element container which contains 3 small div elements appearing as 3 line button -->
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+</nav>
+</div>
+<div class="text">
+<h1>Dana's Handmade Studio Gallery</h1><!-- h1 tag with the name of the gallery-->
+<h3>Click on image to enlarge</h3>
+</div>
+<div id="Gallery"><!--div element with Id named Gallery which contains total of 12 images. I used absolute pathing to every  image  -->
+    <!--Every image has an anchor tag to a same bigger image wich opens in a blank tab also contains two attributes "onmouseover" and onmouseout which then targets 2 functions in js file  -->
+    <a href="../Images/pic4.jpeg" target="_blank"><img src="../Images/res_images/resized_pic4.jpeg" alt="scrunchies" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic8.jpeg" target="_blank"><img src="../Images/res_images/resized_pic8.jpeg"  alt="cardigan" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic9.jpeg" target="_blank"><img src="../Images/res_images/resized_pic9.jpeg" alt="fingerless gloves" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic1.jpeg" target="_blank"><img src="../Images/res_images/resized_pic1.jpeg" alt="crochet rabbit" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic5.jpeg" target="_blank"><img src="../Images/res_images/resized_pic5.jpeg" alt="hand warmers" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic2.jpeg" target="_blank"><img src="../Images/res_images/resized_pic2.jpeg" alt="fingerless gloves" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic7.jpeg" target="_blank"><img src="../Images/res_images/resized_pic7.jpeg" alt="crochet tshirt" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic6.jpeg" target="_blank"><img src="../Images/res_images/resized_pic6.jpeg" alt="scarf" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic3.jpeg" target="_blank"><img src="../Images/res_images/resized_pic3.jpeg" alt="toy koala" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic10.jpeg" target="_blank"><img src="../Images/res_images/resized_pic10.jpeg" alt="scrunchies"onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic12.jpeg" target="_blank"><img src="../Images/res_images/resized_pic12.jpeg"  alt="crochet tshirt" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+    <a href="../Images/pic11.jpeg" target="_blank"><img src="../Images/res_images/resized_pic11.jpeg" alt="crochet tshirt" onmouseover="enlargeImage(this)" onmouseout="condenseImage(this)"/></a>
+</div>
+<script src="..\script.js"></script><!--link to a external script file -->
+</body> 
+</html>

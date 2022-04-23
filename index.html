@@ -1,0 +1,75 @@
+<!--Hello and welcome to my first personal business website. I have chosen to create a little advertising business website for my sister , called: "Dana's Handmade" -->
+
+<!--I had a long think ,what my website should be about and came to conclusion that i could benefit to someone ,but also completing my end of Semester project work-->
+
+<!--This project contains a main landing page with Navigation Menu that links to 4 sections in this webpage: "Home", "Gallery", "About", "Contact us" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>Dana's Handmade</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css"><!-- Link to external CSS styling file -->
+</head>
+<body class="body">
+
+<nav class="navbar"><!-- Main navigation bar container -->
+
+    <div class="logo"><!--Div element whitch contains menu Logo-->
+        <a href="index.html">      <!--Anchor tag witch brings you back to main page-->
+            <img src="Images\Danas_Handmade.png"/>
+            <!--(Logo Design - Create Your Own Logo, It's Free! - Free Logo Design, 2022) Available at https://www.freelogodesign.org-->
+        </a>
+       </div>
+    <ul class="nav-items" id="navi-list"><!-- unordered list for navigation items-->
+        <li class="item1">
+            <a href="index.html">Home</a><!-- anchor tag for HOME page-->
+        </li>
+        <li class="item2">
+            <a href="Gallery\index.html">Gallery</a><!-- anchor tag for Gallery page-->
+        </li>
+        <li class="item3">
+            <a type="button" href="About\index.html">About</a><!-- anchor tag for About page-->
+        </li>
+        <li class="item4">
+            <a href="Contact Us\index.html">Contact Us</a><!-- anchor tag for Contact page-->
+        </li>
+    </ul>
+    </div>
+
+    <!-- When I resize my web page to under 480px on the navigation bar a 3 line button appears which you can toggle and open menu -->
+
+    <div class="menu" id="toggleButton"><!--div element container which contains 3 small div elements appearing as 3 line button -->
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</nav>
+<!--Main page paragraph with some inline CSS styling attributes -->
+<p id="paragraph" style=" color:white ;font-size: large; font-family:Arial, Helvetica, sans-serif; text-justify: distribute-all-lines; 
+ font-style: italic;">All Dana's Handmade are made-to-order, which allows all pieces to be created individually and with love for each customer.
+
+    No two items will ever be exactly the same! Customized orders for specific colours, design or fit are always welcome, as the goal is for each
+
+    customer to experience the pleasure of having something created from scratch exclusively for them.  
+
+    This is the union of ancestral crochet technique with modern ready-to-wear designs.
+    
+    Dana promotes individual uniqueness, sustainability, and craftsmsanship and her clothes provide both comfort and a soft touch in a spectacular textile structure.
+    
+    Crochet is a manual technique which is composed of three elements, hands, hook and yarn. The construction of crochet is made stitch by stitch. Depending on the piece 
+    
+    the weaving process can begin either at the neckline, waist or even sideways. Each style is different but most of them are seamless.
+    
+    Having no formal training, Dana has learnt her craft from her grandmother's knee as a child and subsequently through hours and hours of practice and experimentation on 
+    
+    her own as the years progressed. To create one piece not only takes time but also the utmost concentration and care, a skill which Dana has honed and perfected over the last 16 years. 
+    </p>
+    <!--Links to some images on main page with added inline CSS styling-->
+    <img src="Images/home_picture.jpeg " style="height:450px; width:350px; margin-top: 10px; border-radius: 15px; padding: 10px;position: relative;">
+    <img src="Images/pic5.jpeg " style="height:350px; width:250px ;margin-top: 10px; border-radius: 15px; padding: 10px;position: relative;">
+    <img src="Images/pic14.jpeg " style="height:200px; width:150px; margin-top:10px; border-radius: 15px; padding: 10px;position:relative;">
+<script src="script.js"></script><!--link to an external javascript file-->
+</body>        
+</html>

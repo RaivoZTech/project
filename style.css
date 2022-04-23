@@ -1,0 +1,162 @@
+.form{
+	display:grid;
+	justify-content: center;
+    justify-items: center;
+	font-size:large;
+	font-weight: bold;
+	color:lightslategrey;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input{
+	
+	border-radius:5px;
+	border-color: beige;
+}
+input:hover{
+	box-shadow: 2px 2px 2px darkgrey inset;
+}
+textarea:hover{
+	box-shadow: 2px 2px 2px darkgrey inset;
+}
+button{
+	border-radius: 5px;
+	border-color:lightgray;
+}
+#main{
+	display: contents;
+}
+#paragraph{
+	justify-content: center;
+	justify-items: center;
+	width: 47%;
+	height: 360px;
+	float: left;
+	margin-top: 150px;
+	margin-left: 5%;
+
+}
+.text{
+	text-align: center;
+	color:darkgray;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-items{
+	display:flex;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding:10px 7px;
+	font-size: large;
+	list-style: none;
+
+}
+.logo{
+	border-radius: 20px;
+	display:flex;
+}
+.navbar{
+	border-radius: 10px;
+	width:100%;
+	height: fit-content;
+	display:flex;
+	background-color: #e7d3d3;
+	color:silver;
+	justify-content: space-around;
+	align-items: center;
+}
+.item1,.item2,.item3,.item4{
+	padding:20px 10px;
+	border-radius: 10px;
+}
+
+a{
+	color:darkgray;
+	text-decoration: none;
+}
+a:hover{
+	color:gray;
+}
+.menu{
+	display:none;
+}
+.menu-line{
+	width:20px;
+	height:3px;
+	background-color: gray;
+	margin-top:4px;
+}
+#Gallery{
+	justify-content: center;
+	justify-items: center;
+}
+#Gallery img{
+	filter:grayscale(100%);
+	margin:25px 50px;
+	border:5px solid lightgray;
+	border-radius: 10px;
+	box-shadow:10px 10px 10px 10px;
+	}
+
+/*#Gallery img:hover{
+	filter:grayscale(0%);
+	transform: scale(1.1);
+}*/
+
+@media only screen and (max-width: 980px) {
+#paragraph{
+	display: contents;	
+}
+}
+@media only screen and (max-width: 480px) {
+	.navbar{
+		display: inline-flex;
+		max-height: 120px;
+	}
+	.logo{
+		display: flex;
+		margin-right:80px;
+		width:50px;
+	}
+	#Gallery img{
+		position: relative;
+	}
+	.menu{
+		display:block;
+		position: absolute;
+		margin-left: 75%;
+		margin-bottom: 5%;
+	}
+	.nav-items{
+		width:30%;
+		position: relative;
+		flex-direction: column;
+		text-align: center;
+		display:none;
+		margin-top: 70%;
+		margin-left: 15%;
+		
+	}
+	.container{
+		margin-top:140px;
+		position: relative;
+	}
+	.item1,.item2,.item3,.item4{
+		flex-basis: auto;
+		width:100px;
+		height: 30px;
+		border: 1px solid white;
+		background-color:#e7d3d3 ;
+		padding:8px 4px;
+		margin-top: 5px;
+		margin-right:40px;
+
+	}
+	#paragraph{
+		margin-top: 30%;
+		width: 100%;
+	}
+	.active{
+		display: block;
+		}
+	
+}
+ 

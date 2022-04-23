@@ -1,0 +1,83 @@
+<!--This is my "Contact us" page where I created a form vith form validation for users to complete "-->
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>Dana's Handmade/Contact Us</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="navbar"><!-- Main navigation bar container -->
+    <div class="logo">
+        <a href="..\index.html">
+            <img src="../Images/Danas_Handmade.png"/>
+            <!--(Logo Design - Create Your Own Logo, It's Free! - Free Logo Design, 2022) Available at https://www.freelogodesign.org-->
+        </a>
+    </div>
+   <!--div element which holds all 4 navigation menu items-->
+    <ul class="nav-items" id="navi-list"><!-- unordered list for navigation items-->
+        <li class="item1">
+            <a href="..\index.html">Home</a><!-- anchor tag for HOME page-->
+        </li>
+        <li class="item2">
+            <a href="..\Gallery\index.html">Gallery</a><!--Anchor tag brings to Gallery page-->
+        </li>
+        <li class="item3">
+            <a href="..\About\index.html">About</a><!--Anchor tag brings to About page-->
+        </li>
+        <li class="item4">
+            <a href="index.html">Contact Us</a><!--Anchor tag brings to Contact us page-->
+        </li>
+    </ul>
+    </div>
+    <div class="menu" id="toggleButton"><!--div element container which contains 3 small div elements appearing as 3 line button -->
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</nav>
+<div id="contact-info">
+    <h1 id="message"style="text-align:center"></h1>
+    <!-- form element where user inputs name, phone number, email and a message,
+        then it runs form validaton using javascript for correct input
+    -->
+<form class="form"  action="#" id="userForm" onsubmit="formValidation();return false"><!-- targets javascript function for form validation -->
+    <h3>Please fill our contact form and we will get in touch with you.</h3>
+    <fieldset style="width:25%; height:200px; border-radius: 5px; box-shadow:3px 3px 3px gray;">
+        <legend>Your info:</legend>
+    <table>
+    <tr>
+    <td><label for="fname">Name:</td>
+    <td><input type="text" id="name" name="fname" required></td><!-- input for name-->
+    </label>
+    </tr>
+    <tr>
+    <td><label for="phoneNum">Phone number:</td>
+    <td><input type="tel" id="phoneNum" name="phoneNum" required></td><!-- input for phone number-->
+    </label>
+    </tr>
+    <tr>
+    <td><label for="email">Email:</td>
+    <td><input type="email" id="email" name="email" required></td><!-- input for email-->
+    </label>
+    </tr>
+    </table>
+    </fieldset> 
+    <br>
+    <fieldset style="width:25%; height:200px; border-radius: 5px; box-shadow:3px 3px 3px gray;">
+        <legend style="text-align: center;">Leave your message here</legend>
+        <table>
+            <tr>
+        <td><label for="comments"></td>
+        <td><textarea type="text" id="comments" name="comments" required rows="10" cols="40"></textarea></td> <!-- input for message--> 
+        </label>
+        </tr>
+        </table>
+    </fieldset>
+    <button style="margin-left:250px;border-top:40%;color:midnightblue;border-radius: 5px;">Submit your form</button><!-- submittion button to validate form and send it to server-->
+</form>
+</div>   
+<script src="..\script.js"></script>
+</body> 
+</html>
